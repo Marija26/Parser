@@ -1,6 +1,6 @@
 package myParser.model;
 
-import myParser.model.vo.Vacancy;
+import myParser.vo.Vacancy;
 
 import java.util.List;
 
@@ -11,12 +11,13 @@ public class Provider {
     Strategy strategy;
     public Provider(Strategy strategy){
         this.strategy = strategy;
-
     }
 
     public void setStrategy(Strategy strategy) {
         this.strategy = strategy;
     }
+
     List<Vacancy> getJavaVacancies(String searchString){
-        return null;}
+        return strategy.getVacancies(searchString);
+    }
 }

@@ -1,6 +1,6 @@
 package myParser.model;
 
-import myParser.model.vo.Vacancy;
+import myParser.vo.Vacancy;
 
 import java.util.List;
 
